@@ -1,0 +1,88 @@
+<html>
+    <body>
+        <input type="text" placeholder="enter rollno" id="roll"><br>
+        <input type="text" placeholder="enter name" id="name"><br>
+        <input type="text" placeholder="enter branch" id="br"><br>
+        <input type="text" placeholder="enter year" id="yr"><br>
+        <input type="text" placeholder="enter cgpa" id="cg"><br>
+        <button id="b1">INSERT</button>
+        <button id="b2">UPDATE</button>
+        <button id="b3">DELETE</button>
+        <button id="b4">DISPLAY</button>
+        <h2 id="h"></h2>
+        <script type="module">
+            document.getElementById("b1").addEventListener("click",insertData);
+            document.getElementById("b2").addEventListener("click",updateData);
+            document.getElementById("b3").addEventListener("click",deleteData);
+            document.getElementById("b4").addEventListener("click",displayData);
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+            import {getDatabase,set,update,remove,ref,child,get} from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyB22_-MVPnZ42ZelHLE9LuVFIT1qoNkyj8",
+              authDomain: "student-cecba.firebaseapp.com",
+              databaseURL: "https://student-cecba-default-rtdb.firebaseio.com",
+              projectId: "student-cecba",
+              storageBucket: "student-cecba.appspot.com",
+              messagingSenderId: "527249968147",
+              appId: "1:527249968147:web:6d8659fbbf8827849d03e6"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const dbref=getDatabase();
+            function insertData(){
+                var r=document.getElementById("roll").value;
+                var n=document.getElementById("name").value;
+                var b=document.getElementById("br").value;
+                var y=document.getElementById("yr").value;
+                var c=document.getElementById("cg").value;
+                var ob={
+                    name:n,
+                    branch:b,
+                    year:y,
+                    cgpa:c
+                }
+                set(ref(dbref,"SMS/"+r),ob);
+                alert("Data inserted");
+            }
+            function updateData(){
+                var r=document.getElementById("roll").value;
+                var n=document.getElementById("name").value;
+                var b=document.getElementById("br").value;
+                var y=document.getElementById("yr").value;
+                var c=document.getElementById("cg").value;
+                var ob={
+                    name:n,
+                    branch:b,
+                    year:y,
+                    cgpa:c
+                }
+                update(ref(dbref,"SMS/"+r),ob);
+                alert("Data updated");
+            }
+            function deleteData(){
+                var r=document.getElementById("roll").value;
+                remove(ref(dbref,"SMS/"+r));
+            }
+            function displayData(){
+                var r=document.getElementById("roll").value;
+                get(child(ref(dbref),"SMS/"+r)).then(function(data){
+                    if(data.exists()){
+                        var ob=data.val();
+                        document.getElementById("h").innerHTML=ob.name+" "+ob.branch+" "+ob.year+" "+ob.cgpa;
+                    }
+                    else{
+                        alert("NO DATA")
+                    }
+                });
+            }
+          </script>
+    </body>
+</html>
+
+            

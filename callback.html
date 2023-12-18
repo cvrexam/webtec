@@ -1,0 +1,12 @@
+<script>
+    function sum(x,y,display){
+        var z=x+y;
+        document.write("Callback is involved");
+        display(z);
+        document.write("<br>Callback is is completed")
+    }
+    function display(res){
+        document.write("<br>result="+res)
+    }
+    sum(5,10,display)
+</script>

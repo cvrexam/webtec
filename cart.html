@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+        .headings{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .items{
+            display: flex;
+            justify-content: space-evenly;
+            height: 100px;
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .items input{
+            max-width: 50%;
+            max-height: 20%;
+            
+        }
+        .items img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .sub{
+            display: flex;
+            justify-content:right;
+            margin-right: 10%;
+        }
+        .total{
+            display: flex;
+            float:right;
+            margin-right: 10%;
+            flex-direction: column;
+        }
+        .coupon{
+            display: flex;
+            justify-content:left;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center">CART</h1>
+        <h1 align="right">21B81A3360</h1>
+    </div>
+    <div class="headings">
+        <h3>Product</h3>
+        <h3>Product-info</h3>
+        <h3>Price</h3>
+        <h3>Quantity</h3>
+        <h3>Subtotal</h3>
+    </div>
+    <div class="items">
+        <img src="pexels-photo-1040945.jpeg">
+        <h2>shirt</h2>
+        <price>500\-</price>
+        <input type="text" placeholder="enter quantity">
+        <p>500</p>
+    </div>
+    <div class="items">
+        <img src="pexels-photo-1650093.jpeg">
+        <h2>hat</h2>
+        <price>250\-</price>
+        <input type="text" placeholder="enter quantity">
+        <p>500</p>
+    </div >
+    <div class="items">
+        <img src="pexels-photo-1656684.jpeg">
+        <h2> sunglasses</h2>
+        <price>250\-</price>
+        <input type="text" placeholder="enter quantity">
+        <p>500</p>
+    </div>
+    <div  class="sub">
+        <h3>Subtotal:1500\-</h3>
+    </div>
+    <div class="coupon">
+        <p>Enter Coupon code:</p>
+        <input type="text" placeholder="enter coupon code">
+    </div>
+    <div class="total">
+        <h3>Address:xvhsdvcv</h3>
+        <h3>delivery fee:100\-</h3>
+        <h2>TOTAL:1600\-</h2>
+    </div>
+    <div align="center" style="margin-top: 150px;">
+        <button>Place order</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<script>
+    var clean=new Promise(function(resolve,reject){
+        let done=false;
+        if(done==true)
+            resolve("Closed the room!");
+        else    
+            reject("room is not closed!");
+
+    });
+    clean.then(function(value){
+        document.write("<h1>"+value+"</h1>");
+        document.write("<h2>Go and Play</h2>");
+    },
+    function(error){
+        document.write("<h1>"+error+"</h1>");
+        document.write("<h2>Go and do Laundry</h2>");
+    });
+</script>

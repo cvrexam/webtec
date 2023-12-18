@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        body{
+           
+                background-color: rgb(53, 50, 50);
+           
+        }
+        .container{
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-rows: 20% auto 10%;
+            grid-template-columns: 22% auto;
+           
+                background-color: rgb(53, 50, 50);
+                
+           
+        }
+        header{
+            grid-column: 1/span 2;
+            background-color: rgb(87, 90, 90);
+           
+        }
+        .links{
+            background-color: rgb(136, 132, 128);
+           display: flex;
+           flex-direction: column;
+           justify-content: left;
+           
+           
+        }
+        ul{background-color: rgb(136, 132, 128);
+            align-items: baseline;
+            margin: 2px;
+            margin-top: 20px;
+        }
+        li{
+            justify-content: left;
+            background-color: rgb(136, 132, 128);
+            position: relative;
+            margin:4px;
+            margin-bottom: 20px;
+        }
+        a{  text-decoration: none;
+            background-color: rgb(136, 132, 128);
+            position: absolute;
+            top:0px;
+            color: antiquewhite;
+            left:0px;
+        }
+        a:hover{
+            top:-5px;
+            left:-2px
+        }
+        a:visited{
+            text-decoration: none;
+        }
+        article{
+            background-color: aqua;
+            align-self: center;
+            height: 100%;
+        }
+        article p{
+           margin-left:25%;
+           margin-top:30%
+        }
+        footer{
+            width: 100%;
+            grid-column: 1/span 2;
+            background-color: blueviolet;
+           
+        }
+        footer div{margin: 4px;
+            display: flex;
+            flex-direction: row;
+            background-color: blueviolet;
+            justify-content: center;
+        }
+        div span{
+            background-color: blueviolet;
+        }
+       footer div a{
+            background-color: blueviolet;
+            color:black;
+            text-decoration: none;
+        }
+        .headings{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            color:aliceblue;
+            justify-content: center;
+            align-items: center;
+        }
+        .headings img{
+            width: 30px;
+            height: 30px;
+           
+        }
+        .ppp{
+            margin-left: 450px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="headings" align="left">
+                <img src="https://static.vecteezy.com/system/resources/previews/004/999/463/non_2x/shopping-cart-icon-illustration-free-vector.jpg">
+                <h2> HOMEPAGE </h2>
+                <h2 class="ppp">21B81A3360</h2>
+            </div>
+       
+             
+        </header>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a></li>
+                  <li>  <a href="form.html">Login</a></li>
+                  <li> <a href="registration.html">Register</a></li>
+                  <li> <a href="catalog.html">Catalog</a></li>
+                  <li> <a href="cart.html">Cart</a></li>
+               
+            </ul>
+        </div>
+        <article>
+           <p> Welcome to HomePage</p>
+        </article>
+        <footer>
+            <div>
+                <span>&#169;</span>Copyright2023  
+            </div>
+        </footer>
+    </div>
+   
+</body>
+</html>
