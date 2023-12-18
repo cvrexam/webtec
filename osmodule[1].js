@@ -1,0 +1,13 @@
+let os=require('os');
+console.log("name of os",os.type());
+console.log("cpu architecture",os.arch());
+console.log("total memory",os.freemem());
+console.log(os.hostname());
+console.log(os.networkInterfaces());
+console.log(os.platform());
+console.log(os.release());
+console.log(os.totalmem());
+console.log(os.type());
+console.log(os.userInfo());
+var a=os.cpus();
+console.log(a);
