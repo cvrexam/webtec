@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="student_list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="student" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="fname" type="xs:string" />
+										<xs:element name="fname" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="gender" type="xs:string" />
+							<xs:element name="dob" type="xs:date" />
+							<xs:element name="branch" type="xs:string" />
+							<xs:element name="year" type="xs:string" />
+							<xs:element name="sem" type="xs:int" />
+							<xs:element name="percentage" type="xs:int" />
+							<xs:element name="contact_info">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="email" type="xs:string" />
+										<xs:element name="mobile" type="xs:int" />
+										<xs:element name="address" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="courses_registered">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="course" minOccurs="1" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="cname" type="xs:string" />
+													<xs:element name="cfaculty" type="xs:string" />
+												</xs:sequence>
+													<xs:attribute name="code" type="xs:int" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+							<xs:attribute name="roll" type="xs:int" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

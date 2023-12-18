@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students-list SYSTEM "Untitled1.dtd">
+<students-list>
+	<student roll="101"
+	xmlns:xsi="http:\\www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Untitled2.xsd">
+		<name>
+			<fname>vathsal</fname>
+			<lname>vuppala</lname>
+		</name>
+		<gender>male</gender>
+		<dob>14-07-2004</dob>
+		<branch>csit</branch>
+		<year>3rd year</year>
+		<sem>1</sem>
+		<percentage>10</percentage>
+		<contact-info>
+			<email>vathsal14@gmail.com</email>
+			<mobile>825452168468541</mobile>
+			<address>Hyderabad</address>
+		</contact-info>
+		<courses-registered>
+			<course code = "46545">
+				<cname>ewt</cname>
+				<cfaculty>Ms.Vineela</cfaculty>
+			</course>
+			<course code = "46544">
+				<cname>Dbms</cname>
+				<cfaculty>Nagarjuna</cfaculty>
+			</course>
+		</courses-registered>
+	</student>
+</students-list>
+

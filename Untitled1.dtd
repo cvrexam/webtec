@@ -1,0 +1,21 @@
+<!ELEMENT students-list (student+)>
+<!ELEMENT student (name,gender,dob,branch,year,sem,percentage,contact-info,courses-registered)>
+<!ELEMENT name (fname,lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT sem (#PCDATA)>
+<!ELEMENT percentage (#PCDATA)>
+<!ELEMENT contact-info (email,mobile,address)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT courses-registered (course+)>
+<!ELEMENT course (cname,cfaculty)>
+<!ELEMENT cname (#PCDATA)>
+<!ELEMENT cfaculty (#PCDATA)>
+<!ATTLIST student roll CDATA #REQUIRED>
+<!ATTLIST course code CDATA #REQUIRED>
