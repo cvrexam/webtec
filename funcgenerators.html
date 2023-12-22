@@ -1,0 +1,24 @@
+<script>
+	function *gen1()
+	{
+		console.log("This statement is executed first");
+		yield a='Hello';
+		console.log("This statement is executed after a pause");
+		yield 10;
+	}
+	let ob=gen1();
+	console.log(ob.next());
+	console.log(ob.next());
+	console.log(ob.next());
+	function *gen2(i)
+	{
+		console.log("Statement 1");
+		yield i=i+10;
+		console.log("Statement 2");
+		yield i=i+20;
+	}
+	let obj=gen2(5);
+	console.log(obj.next());
+	console.log(obj.next());
+	console.log(obj.next());
+</script>
