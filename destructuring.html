@@ -1,0 +1,41 @@
+<html>
+	<body>
+		<script>
+			const ar=["mango","apple","watermelon","orange"];
+			var[a,b]=ar;
+			document.write("Value of a:"+a);
+			document.write("<br>Value of b:"+b);
+			var[x,,y]=[10,20,30,40,50];
+			document.write("<br>Value of x:"+x);
+			document.write("<br>Value of y:"+y);
+			var[a1,b1,...c1]=[10,20,30,40,50];
+			document.write("<br>Value of a1:"+a1);
+			document.write("<br>Value of b1:"+b1);
+			document.write("<br>Value of c1:"+c1);
+			function calculator(x,y)
+			{
+				var s=x+y;
+				var d=x-y;
+				var p=x*y;
+				var q=x/y;
+				return[s,d,p,q];
+			}
+			var[sum,,prod]=calculator(10,5);
+			document.write("<br>Sum:"+sum);
+			document.write("<br>Product:"+prod);
+			const emp={
+				id:102,
+				name:"Rohan",
+				designation:"Senior",
+				dept:"CSIT",
+				salary:100000
+			}
+			let{name,salary}=emp;
+			document.write("<br>Emp name:"+name);
+			document.write("<br>Emp salary:"+salary);
+			let{name:n,salary:s}=emp;
+			document.write("<br>Emp name:"+n);
+			document.write("<br>Emp salary:"+s);
+		</script>
+	</body>
+</html>
