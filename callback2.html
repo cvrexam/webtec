@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script>
+			function clock()
+			{
+				var d=new Date();
+				var s=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+				document.getElementById("i").innerHTML=s;
+			}
+			setInterval(clock,1000);
+		</script>
+	</head>
+	<body>
+		<h1 id="i"></h1>
+	</body>
+</html>
