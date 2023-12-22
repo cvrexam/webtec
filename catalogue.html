@@ -3,99 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>catalog</title>
     <style>
-        body{
-            background-image:url('./pexels-photo-164005.jpeg');
-            margin-top: 0%;
-            padding: 0%;
+        .items{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
         }
-        .container{
-           
-            margin-top: 0%;
-        }
-        h1{
-            background-color: rgb(16, 16, 16);
-            color: azure;
-            font-family: cursive;
-            top: 0%;
-            padding: 0%;
-            height: 10vh;
-            width: 100%;
-            margin-top: 0%;
-            margin-left: 0%;
-            left: 0%;
-            text-align: center;
-            display: flex;
-            gap: 2%;
-        }
-        img{
-            width:5%;
-            height: 10vh;
-            background-color: antiquewhite;
-        }
-        .cart{
-            width:40vh;
-            height:60vh;
-            margin-top: 0%;
-            top: 0%;
-            border-radius: 5%;
+        .card{
+            width: 300px;
             border: 5px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        .card img{
+            max-width: 100%;
+        }
+        @media only screen and(max-width:800px){
+            .items{
+                display: grid;
+                grid-template-columns: auto;
+                gap: 20px;
+            }
+        }
+        .card button{
+            color: black;
+            background-color: red;
+        }
+        form{
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1><img src="./3715404.png"/>Welcome to catalogue page</h1>
-    <div class="container">
-        <h1 style="border-radius: 4%;">Kids Wear</h1>
-        <div style="display: flex;flex-direction: row;">
-            <div class="cart">
-                <div style="background-image: url('./pexels-photo-1619801.jpeg'); width: 40vh;height: 40vh;border-radius: 4% 4% 0% 0%; background-size: cover;"></div>
-                <div style="background-color: rgb(243, 238, 237);top:0%;margin-top: -7%;width: 40vh;height: 20vh;border-radius: 0% 0% 5% 5%;">
-                    <h2 style="text-align: center;">Winter Coat</h2>
-                    <h2 style="text-align: center;">$12.00</p>
-                </div>
-            </div>
-            <div class="cart" style="margin-left: 5%;">
-                <div style="background-image: url('./pexels-photo-1650093.jpeg'); width: 40vh;height: 40vh;border-radius: 4% 4% 0% 0%; background-size: cover;"></div>
-                <div style="background-color: rgb(243, 238, 237);top:0%;margin-top: -7%;width: 40vh;height: 20vh;border-radius: 0% 0% 5% 5%;">
-                    <h2 style="text-align: center;">Leather Jacket</h2>
-                    <h2 style="text-align: center;">$16.99</p>
-                </div>
-            </div>
-            <div class="cart" style="margin-left: 5%;">
-                <div style="background-image: url('./pexels-photo-2876630.jpeg'); width: 40vh;height: 40vh;border-radius: 4% 4% 0% 0%; background-size: cover;"></div>
-                <div style="background-color: rgb(243, 238, 237);top:0%;margin-top: -7%;width: 40vh;height: 20vh;border-radius: 0% 0% 5% 5%;">
-                    <h2 style="text-align: center;">kids Women dress</h2>
-                    <h2 style="text-align: center;">$9.99</p>
-                </div>
-            </div>
+    <div align="right"><h1>21B81A3360</h1></div>
+    <div class="items">
+        <div class="card">
+            <img src="saree.jpeg">
+            <h3>Price:<del>Rs.2500</del>Rs.2000</h3>
+            <p>saree</p>
+            <button>add to cart</button>
         </div>
-    </div>
-    <div class="container" style="margin-top: 5%;">
-        <h1 style="border-radius: 4%;">Mens Wear</h1>
-        <div style="display: flex;flex-direction: row;">
-            <div class="cart">
-                <div style="background-image: url('./pexels-photo-1040945.jpeg'); width: 40vh;height: 40vh;border-radius: 4% 4% 0% 0%; background-size: cover;"></div>
-                <div style="background-color: rgb(243, 238, 237);top:0%;margin-top: -7%;width: 40vh;height: 20vh;border-radius: 0% 0% 5% 5%;">
-                    <h2 style="text-align: center;">Mens Jacket purple</h2>
-                    <h2 style="text-align: center;">$28.78</p>
-                </div>
-            </div>
-            <div class="cart" style="margin-left: 5%;">
-                <div style="background-image: url('./pexels-photo-1650093.jpeg'); width: 40vh;height: 40vh;border-radius: 4% 4% 0% 0%; background-size: cover;"></div>
-                <div style="background-color: rgb(243, 238, 237);top:0%;margin-top: -7%;width: 40vh;height: 20vh;border-radius: 0% 0% 5% 5%;">
-                    <h2 style="text-align: center;">Mens T-Shirt</h2>
-                    <h2 style="text-align: center;">$19.99</p>
-                </div>
-            </div>
-            <div class="cart" style="margin-left: 5%;">
-                <div style="background-image: url('./men-s-hoodie-with-hoodie-that-says-word-it_920356-294.avif'); width: 40vh;height: 40vh;border-radius: 4% 4% 0% 0%; background-size: cover;"></div>
-                <div style="background-color: rgb(243, 238, 237);top:0%;margin-top: -7%;width: 40vh;height: 20vh;border-radius: 0% 0% 5% 5%;">
-                    <h2 style="text-align: center;">Mens Hoodie</h2>
-                    <h2 style="text-align: center;">$29.99</p>
-                </div>
-            </div>
+        <div class="card">
+            <img src="hoodie.jpeg">
+            <h3>Price:<del>Rs.2000</del>Rs.1800</h3>
+            <p>Hoodie</p>
+            <button>add to cart</button>
+        </div>
+        <div class="card">
+            <img src="watch.jpeg">
+            <h3>Price:<del>Rs.2500</del>Rs.2000</h3>
+            <p>watch</p>
+            <button>add to cart</button>
+        </div>
+        <div class="card">
+            <img src="bracelet.jpeg">
+            <h3>Price:<del>Rs.2500</del>Rs.2000</h3>
+            <p>bracelet</p>
+            <button>add to cart</button>
+        </div>
+        <div class="card">
+            <img src="shirt.jpg">
+            <h3>Price:<del>Rs.2500</del>Rs.2000</h3>
+            <p>shirt</p>
+            <button>add to cart</button>
         </div>
     </div>
 </body>
