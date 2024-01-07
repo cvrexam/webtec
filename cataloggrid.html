@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 20px;
+                justify-content: center;
+                font-family: cursive;
+            }
+
+            .card {
+                border: 10px solid rgb(4, 4, 4);
+                width: 275px;
+                background-color: rgb(187, 238, 214);
+                text-align: center;
+                padding: 10px;
+            }
+
+            .card img {
+                max-width: 40%;
+                max-height: 40%;
+            }
+
+            .card h2 {
+                background: rgb(232, 170, 240);
+                color: rgb(15, 15, 15);
+                font-size: 2vw;
+            }
+
+            .card h3 {
+                background: rgb(243, 222, 203);
+                color: rgb(7, 7, 7);
+                font-size: 1.5vw;
+            }
+
+            .card button {
+                background: rgb(162, 182, 241);
+                color: rgb(4, 4, 4);
+                width: 200px;
+            }
+
+            @media only all and (max-width:1000px) {
+                .container {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 20px;
+                    justify-content: center;
+                }
+            }
+
+            @media only all and (max-width:576px) {
+                .container {
+                    display: grid;
+                    grid-template-columns: auto;
+                    gap: 20px;
+                    justify-content: center;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="C:\Users\manju\Downloads\download.jpeg">
+            <h2>Trendy T-Shirt</h2>
+            <h3>Price:<del>Rs.1500</del> Rs.750</h3>
+            <p>Men Stylish T-Shirt</p>
+            <button Type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\manju\Downloads\pexels-fernando-arcos190819.jpg">
+            <h2>Analog Watch</h2>
+            <h3>Price:<del>Rs.2500</del> Rs.1500</h3>
+            <p>pexels-fernando-arcos-watch</p>
+            <button type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\manju\Downloads\download (1).jpeg">
+            <h2>Stylish Shoes</h2>
+            <h3>Price:<del>Rs.5000</del> Rs.3000</h3>
+            <p>Stylish Blue Shoes</p>
+            <button type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\manju\Downloads\download (2).jpeg">
+            <h2>Wedding Rings</h2>
+            <h3>Price:<del>Rs.25000</del> Rs.17000</h3>
+            <p>Golden Wedding Ring</p>
+            <button type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\manju\Downloads\download (3).jpeg">
+            <h2>SmartPhone</h2>
+            <h3>Price:<del>Rs.50000</del> Rs.40000</h3>
+            <p>Samsung A52 s 5g smart phone</p>
+            <button type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="C:\Users\manju\Downloads\download (4).jpeg">
+            <h2>Laptop</h2>
+            <h3>Price:<del>Rs.78000</del> Rs.72000</h3>
+            <p>Mac air book pro</p>
+            <button type="button">Add to cart</button>
+        </div>
+    </div>
+</body>
+
+</html>

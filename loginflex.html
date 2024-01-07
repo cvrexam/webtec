@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            font-size: 1.5vw;
+            border: 5px groove rgb(7, 7, 7);
+            padding: 50px;
+            margin: auto;
+            background-color: rgb(191, 179, 243);
+        }
+
+        .container input,
+        label {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .tt:focus {
+            background-color: mediumorchid;
+        }
+
+        .bb:HOVER {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="f1" action="" method="post">
+        <div class="container">
+            <label>Username:</label>
+            <input type="username" name="t1" class="tt">
+            <label>Password:</label>
+            <input type="password" name="t2" class="tt">
+
+            <div class="bb">
+                <input type="submit" value="submit" name="b1" class="bb">
+                <input type="reset" value="clear" name="b2" class="bb">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

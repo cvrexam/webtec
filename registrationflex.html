@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 26.5%;
+            border: 10px groove rgb(180, 224, 245);
+            padding: 20px;
+            margin: auto;
+            font-family: cursive;
+            background-color: rgb(195, 175, 238);
+        }
+
+        .tt {
+            padding: 7px;
+            margin: 10px;
+            font-family: cursive;
+            width: 70%;
+        }
+
+        .tt:focus {
+            background-color: rgb(240, 233, 233);
+        }
+
+        .bb {
+            background-color: rgb(115, 115, 240);
+        }
+
+        .dd {
+            background-color: lightcoral;
+        }
+
+        body {
+            background-image: url("im.jpeg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form name="REGISTRATION FORM" action=" " method="post">
+            <fieldset style="width:84%">
+                <legend>REGISTRATION FORM</legend>
+                <input type="text" class="tt" placeholder="First Name">
+                <input type="text" class="tt" placeholder="Last Name">
+                <input type="password" class="tt" placeholder="Password">
+                <input type="password" class="tt" placeholder="Re-Enter
+Password">
+                <div><input type="radio" name="g" value="male">male<input type="radio" name="g" value="female">female
+                </div>
+                <input type="text" class="tt" maxlength="10" placeholder="Mobile Number">
+                <input type="date" class="tt" placeholder="date of birth">
+                <input type="text" class="tt" placeholder="Address">
+                <select class="tt">
+                    <option>Select State</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Andhra pradesh</option>
+                    <option>Bihar</option>
+                    <option>Delhi</option>
+                    <option>Telangana</option>
+                    <option>Mumbai</option>
+                    <option>Karnataka</option>
+                    <option>kerala></option>
+                </select>
+                <select class="tt">
+                    <option>Select City</option>
+                    <option>Dharampur</option>
+                    <option>Silchar</option>
+                    <option>Vizag</option>
+                    <option>Patna</option>
+                    <option>Alipur</option>
+                    <option>Nalgonda</option>
+                    <option>lonwaala</option>
+                    <option>Benguluru</option>
+                    <option>Kottayyam</option>
+                </select>
+                <input type="text" maxlength="6" class="tt" placeholder="Zip-code">
+                <div align="center">
+                    <input type="submit" value="SUBMIT" name="b1" class="bb">
+                    <input type="reset" value="CLEAR" name="b2" class="bb">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

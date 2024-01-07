@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script>
+        const person = {
+            name: "john",
+            age: 20,
+            greet: function () {
+                alert("hello");
+            }
+        }
+        const stud = {
+            _proto_: person,
+            marks: [50, 60, 40],
+            year: 3
+        }
+        document.write(stud.name);
+        stud.greet();
+    </script>
+</body>
+
+</html>

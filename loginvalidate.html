@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script>
+        function validate() {
+            var u = document.login.u.value;
+            var p = document.login.p.value;
+            var uexp = /^[A-Za-z0-9]+$/;
+            if (u == "") {
+                alert("enter username");
+                return false;
+            }
+            else if (p == "") {
+                alert("enter password");
+                return false;
+            }
+            else if (uexp.test(u) == false) {
+                alert("username should contain alphabets and digits");
+                return false;
+            }
+            else if (p.length < 8) {
+                alert("password should be max in 8 characters");
+                return false;
+            }
+            else {
+                alert("validation is true");
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="login" action="success.html" method="" onsubmit="return
+validate()">
+        Enter Username:<input type="text" name="u">
+        <br><br>
+        Enter Password:<input type="password" name="p">
+        <br><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+
+</html>
