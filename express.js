@@ -2,27 +2,27 @@ const express=require('express');
 const app=express();
 const fs=require('fs');
 const bp=require('body-parser');
-const stu=require('./student.json');
-const port=7000;
+const stu=require('./students.json');
+const port=7500;
 app.use(bp.json());
 app.get("/",(req,res)=>{
     res.send("<h1>Welcome to myAPI</h1>");
     res.end();
 });
-app.get("/student",(req,res)=>{
-    fs.readFile("./student.json",function(err,data) {
+app.get("/students",(req,res)=>{
+    fs.readFile("./students.json",function(err,data) {
         res.send(data);
         res.end();
     });
 });
-app.post("/student",(req,res)=>{
+app.post("/students",function(req,res){
     var newstu=req.body;
     stu.push(newstu);
     writedataback(stu);
     res.send("<h1>New student record inserted successfullyy!!!</h1>");
     res.end();
 });
-app.put("/student",(req,res)=>{
+app.put("/students",(req,res)=>{
     var upstu=req.body;
     for(s in stu){
         if(stu[s]['id']=upstu['id']){
@@ -35,7 +35,7 @@ app.put("/student",(req,res)=>{
     }
     res.end();
 });
-app.delete("/student",(req,res)=>{
+app.delete("/students",function(req,res){
     var delstu=req.body;
     for(s in stu){
         if(stu[s]['id']=delstu['id']){
@@ -47,7 +47,7 @@ app.delete("/student",(req,res)=>{
     res.end();
 });
 function writedataback(data){
-    fs.writeFile("./student.json",JSON.stringify(data) ,function(err){
+    fs.writeFile("./students.json",JSON.stringify(data) ,function(err){
         console.log(err);
     });
 }
