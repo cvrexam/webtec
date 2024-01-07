@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function getData(){
+let key="2bbc750e7fb78bd0d70caa2b8413bf8b"
+let city=document.getElementById("i1").value;
+let url=https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}
+let p=fetch(url);
+p.then(function(response){
+return response.json();
+}).then(function(data){
+console.log(data)
+let t="temp:"+data.main.temp+" kelvin";
+let h="humid:"+data.main.humidity;
+document.getElementById("d").innerHTML=t+h;
+});
+p.catch(function(error){
+console.log(error);
+});
+}
+</script>
+</head>
+<body>
+<form>
+Enter city:<input type="text" name="t1" id="i1">
+<input type="button" value="getInfo" onClick="getData()">
+</form>
+<h2 id="d"></h2>
+</body>
+</html>
