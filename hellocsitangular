@@ -1,0 +1,11 @@
+component.css=
+h1{
+ color:blue;
+ background-color: aquamarine;
+}
+component.html=
+<h1>Message from root component: {{ msg }}</h1>
+<h3>{{msg2}}</h3>
+component.ts=
+msg="Hello CSIT!";
+ msg2="This is B Section";
