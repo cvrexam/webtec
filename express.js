@@ -5,6 +5,7 @@ const bp=require('body-parser');
 const stu=require('./students.json');
 const port=7500;
 app.use(bp.json());
+app.use(bp.urlencoded({extended:true}));
 app.get("/",(req,res)=>{
     res.send("<h1>Welcome to myAPI</h1>");
     res.end();
