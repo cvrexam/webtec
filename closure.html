@@ -2,11 +2,12 @@
     function outer(){
         var a=10;
         function inner(){
-            var b=33;
+            var b=3360;
             document.write("a="+a);
             document.write("<br>b="+b);
+            return b;
         }
-        inner();
+        return inner;
     }
-    outer()
+    console.dir(outer());
 </script>
