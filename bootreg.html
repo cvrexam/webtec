@@ -3,85 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boot login page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-</head>
 <body>
-    <marquee behavior="MOVING" direction="right">
-        <h1>
-            hello  !!!!!
-        </h1>
-    </marquee>
-   
-    <form name="f1" action="submit.html" method="post" class="border border-5 border-info bg-danger mx-auto"style="max-width:50%">
-        <table name="t1" cellspacing="10" align="center">
-        <tr>
-            <td colspan="2"><h1 align="center">REGISTRATION FORM</h1></td>
-        </tr>
-            <tr>
-                <td><label class="form-label">Enter firstname:</label></td>
-                <td><input class="form-control" type="text" name="te1" placeholder="enter firstname"></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">Enter Lastname:</label></td>
-                <td><input class="form-control"type="text" name="te2"placeholder="enter lastname"></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">Email:</label></td>
-                <td><input class="form-control"type="email" name="e1" placeholder="enter email"></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">Password:</label></td>
-                <td><input class="form-control"type="password" name="p1" placeholder="enter password"></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">Mobile no:</label></td>
-                <td><input class="form-control"type="text" name="te3" maxlength="10" placeholder="eg-1234567890"></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">DOB:</label></td>
-                <td><input class="form-control"type="date" name="d1"></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">Address:</label></td>
-                <td><textarea class="form-control"rows="3"></textarea></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">State:</label></td>
-                <td><select class="form-select"name="s1">
+<form name="f1" action="" method="post"  class="border border-5 border-info bg-danger"style="max-width:50%">
+<div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Enter firstname:</label></div>
+                <div class="col"><input class="form-control" type="text" name="te1" placeholder="enter firstname"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Enter Lastname:</label></div>
+                <div class="col"><input class="form-control"type="text" name="te2"placeholder="enter lastname"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Email:</label></div>
+                <div class="col"><input class="form-control"type="email" name="e1" placeholder="enter email"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Password:</label></div>
+                <div class="col"><input class="form-control"type="password" name="p1" placeholder="enter password"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Mobile no:</label></div>
+                <div class="col"><input class="form-control"type="text" name="te3" maxlength="10" placeholder="eg-1234567890"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">DOB:</label></div>
+                <div class="col"><input class="form-control"type="date" name="d1"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Address:</label></div>
+                <div class="col"><textarea class="form-control"rows="3"></textarea></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">State:</label></div>
+                <div class="col"><select class="form-select"name="s1">
                     <option>Select state</option>
                     <option>Telangana</option>
                     <option>AP</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">City:</label></td>
-                <td><select class="form-select"name="s2">
+                </select></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">City:</label></div>
+                <div class="col"><select class="form-select"name="s2">
                     <option>Select city</option>
                     <option>Hyderabad</option>
                     <option>karimnagar</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">Upload photo:</label></td>
-                <td><input class="form-control"type="file" name="f1"></td>
-            </tr>
-            <tr>
-                <td><label class="form-label">Zipcode:</label></td>
-                <td><input class="form-control"type="text" name="te4" maxlength="6" placeholder="eg-511511"></td>
-            </tr>
-            <tr>
-                <td><input class="form-check"type="checkbox" name="c1">I agree terms and conditions</td>
-            </tr>
-            <tr>
-                <td><input class="btn btn-dark"type="submit" name="b1" value="SUBMIT"></td>
-                <td><input class="btn btn-warning"type="reset" name="b2" value="CLEAR"></td>
-            </tr>
-        </table>
-    </form>
-
-    
+                </select></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Upload photo:</label></div>
+                <div class="col"><input class="form-control"type="file" name="f1"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><label class="form-label">Zipcode:</label></div>
+                <div class="col"><input class="form-control"type="text" name="te4" maxlength="6" placeholder="eg-511511"></div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><input class="form-check"type="checkbox" name="c1">I agree terms and conditions</div>
+            </div>
+            <div class="p-2 m-2 row">
+                <div class="col"><input class="btn btn-dark"type="submit" name="b1" value="SUBMIT"></div>
+                <div class="col"><input class="btn btn-warning"type="reset" name="b2" value="CLEAR"></div>
+            </div>
+</form>
 </body>
 </html>
